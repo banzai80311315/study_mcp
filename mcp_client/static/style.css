@@ -1,0 +1,130 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.7;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: #2c3e50;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.input-area {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 8px;
+}
+
+#question {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.message {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  word-break: break-word;
+}
+
+.user {
+  background-color: #dff0d8;
+  align-self: flex-end;
+}
+
+.bot {
+  background-color: #f0f0f0;
+  align-self: flex-start;
+}
+
+/* Markdown対応 */
+.bot h1, .bot h2, .bot h3 {
+  font-weight: bold;
+  margin: 0.8em 0 0.3em;
+  line-height: 1.4;
+  color: #2c3e50;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+  background-color: #f9f9f9;
+  font-size: 1.1em;
+}
+
+.bot p {
+  margin: 0.4em 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.bot strong {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.bot ul {
+  margin: 0.5em 0 0.5em 1.5em;
+  padding-left: 1em;
+}
+
+.bot li {
+  margin-bottom: 0.4em;
+}
+
+.bot code {
+  background-color: #eee;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.bot pre {
+  background-color: #f4f4f4;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: monospace;
+}
+
+.bot hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+}
+
+#response {
+  display: flex;
+  flex-direction: column;
+}
