@@ -11,6 +11,8 @@ import os
 
 app = FastAPI()
 
+# FastAPI仕様
+
 # CORS（ローカルHTMLからのfetch対策）
 app.add_middleware(
     CORSMiddleware,
